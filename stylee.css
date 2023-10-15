@@ -65,8 +65,9 @@ header {
   color: rgb(0, 0, 0);
   text-align: center;
 }
-.header-content h1 {
+.header-content .caption {
   font-size: 4vmin;
+  margin-bottom: 100px;
 }
 .line {
   width: 150px;
@@ -75,18 +76,21 @@ header {
   margin: 10px auto;
   border-radius: 5px;
 }
-.header-content h2 {
+header .line {
+  margin-bottom: 50px;
+}
+.header-content .judul-utama {
   font-size: 9vmin;
   margin: 5px;
-  margin-top: 50px;
   margin-bottom: 30px;
   font-family: "Denk One", sans-serif;
 }
 .ctn {
   padding: 8px 15px;
-  background: rgb(31, 133, 250);
+  /* background: rgb(31, 133, 250); */
   border-radius: 30px;
-  color: whitesmoke;
+  /* color: whitesmoke; */
+  margin-bottom: 50px;
 }
 .menu-btn {
   position: absolute;
@@ -107,7 +111,7 @@ header {
   max-width: 60%;
   margin: auto;
 }
-.title2 h1 {
+.title2 h2 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
@@ -128,7 +132,7 @@ header {
   background: var(--gradient);
 }
 .jasa2:hover.jasa2 p,
-.jasa2:hover.jasa2 h2,
+.jasa2:hover.jasa2 h3,
 .jasa2:hover.jasa2 .fa {
   color: white;
 }
@@ -137,14 +141,14 @@ header {
   color: var(--lightblue);
   margin-bottom: 10px;
 }
-.jasa2 h2 {
+.jasa2 h3 {
   margin-bottom: 10px;
 }
 
 .profil {
   width: 100%;
-  height: 80vh;
-  background-image: url(Bg5.png);
+  height: 60vh;
+  /* background-color: rgb(240, 240, 240); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -152,15 +156,18 @@ header {
   align-items: center;
 }
 
+aside .wadah {
+  margin-top: 150px;
+}
 .review {
   margin-top: 30px;
   text-align: center;
 }
-.review h4 {
-  color: rgb(0, 0, 0);
+.review img {
+  width: 85%;
 }
 
-section {
+.porto {
   width: 80%;
   margin: 80px auto;
 }
@@ -170,10 +177,14 @@ section {
   width: 100%;
   justify-content: space-between;
 }
+.porto2 p {
+  text-align: justify;
+}
 .porto2 .col {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 40px;
 }
 
 .content-col {
@@ -181,13 +192,14 @@ section {
 }
 .image-col {
   width: 60%;
+  margin-left: 100px;
 }
 
 .foto img {
   max-width: 250px;
   margin: 10px;
 }
-.content-col h1 {
+.content-col h2 {
   font-size: 7vmin;
   color: black;
 }
@@ -230,7 +242,7 @@ ul {
   width: 80%;
   margin: auto;
 }
-section {
+article {
   padding: 60px 0;
 }
 .ctn {
@@ -252,7 +264,7 @@ section {
   max-width: 60%;
   margin: auto;
 }
-.title h1 {
+.title h2 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
@@ -270,8 +282,16 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 }
 
+.patner .wadah {
+  margin-top: -100px;
+}
+article .wadah img {
+  margin-left: 50px;
+  align-items: center;
+}
+
 .diskusi {
-  margin: 60px auto;
+  margin: 10px auto;
   width: 80%;
 }
 .ctn-wrapper {
@@ -284,11 +304,12 @@ section {
 }
 .ctn-wrapper .ctn {
   height: 40px;
+  margin-top: 30px;
 }
 .ctn-wrapper .teks {
   width: 80%;
 }
-.ctn-wrapper h1 {
+.ctn-wrapper h2 {
   color: var(--lightblue);
   margin-bottom: 10px;
 }
@@ -297,6 +318,7 @@ section {
 footer {
   padding: 10px 0;
   background-color: var(--lightblue);
+  margin-top: 200px;
 }
 footer .wadah {
   display: grid;
@@ -398,10 +420,14 @@ hr,
     flex-direction: column;
   }
   .porto2 .col {
-    margin: 20px auto;
+    margin: -100px auto;
   }
+
   .col img {
     max-width: 90%;
+  }
+  .porto .foto {
+    margin-top: 200px;
   }
   .profil-content {
     width: 100%;
@@ -454,13 +480,19 @@ hr,
   .ctn-wrapper .teks {
     margin-bottom: 20px;
   }
+  .patner .wadah {
+    margin-top: -50px;
+  }
   footer .wadah {
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
   }
   .profil-content .wadah {
     font-size: 15px;
   }
-  .profil-content .wadah h1 {
+  .profil-content .wadah h2 {
     font-size: 17px;
+  }
+  .profil .review img {
+    width: 350px;
   }
 }
