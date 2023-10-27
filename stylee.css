@@ -50,6 +50,9 @@ nav img {
   margin: 0 30px;
   font-family: "Poppins", sans-serif;
 }
+.nav-links li a {
+  color: black;
+}
 header {
   width: 100vw;
   height: 100vh;
@@ -228,7 +231,6 @@ img:hover {
 }
 li:hover {
   color: rgb(31, 133, 250);
-  cursor: zoom-out;
 }
 
 a {
@@ -429,7 +431,7 @@ hr,
 
   .col img {
     max-width: 90%;
-    margin-left: 25px;
+    margin-left: 18px;
   }
   .porto .foto {
     margin-top: 200px;
